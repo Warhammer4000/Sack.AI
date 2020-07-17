@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DTD.Evaluate.WPFApp.ViewPages"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-             xmlns:customControls="clr-namespace:DTD.Evaluate.WPFApp.CustomControls"
+             xmlns:cards="clr-namespace:DTD.Evaluate.CustomUserControls.Cards;assembly=DTD.Evaluate.CustomUserControls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="White" materialDesign:ShadowAssist.ShadowDepth="Depth2" >
     <StackPanel>
@@ -29,10 +29,10 @@
         </Grid>
 
         <WrapPanel>
-            <customControls:EmployeeCard Margin="5,5,5,5"/>
-            <customControls:EmployeeCard Margin="5,5,5,5" />
-            <customControls:EmployeeCard Margin="5,5,5,5" />
-            <customControls:EmployeeCard  Margin="5,5,5,5"/>
+            <cards:EmployeeCard Margin="5,5,5,5"/>
+            <cards:EmployeeCard Margin="5,5,5,5" />
+            <cards:EmployeeCard Margin="5,5,5,5" />
+            <cards:EmployeeCard  Margin="5,5,5,5"/>
         </WrapPanel>
 
 

@@ -1,5 +1,4 @@
 ﻿using DTD.Evaluate.WPFApp.ViewPages;
-using DTD.Evaluate.WPFApp.Views;
 using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
@@ -12,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using DTD.Evaluate.CustomUserControls.Dialogues;
 
 namespace DTD.Evaluate.WPFApp
 {
@@ -61,6 +61,9 @@ namespace DTD.Evaluate.WPFApp
                     break;
                 case 2:
                     panel = new ComparisionPage();
+                    break;
+                case 3:
+                    panel = new Configuration();
                     break;
                 default:
                     break;

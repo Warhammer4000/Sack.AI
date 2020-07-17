@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DTD.Evaluate.Extentions\DTD.Evaluate.Extentions.csproj" />
+    <ProjectReference Include="..\DTD.Evaluate.Models\DTD.Evaluate.Models.csproj" />
+  </ItemGroup>
+
+</Project>

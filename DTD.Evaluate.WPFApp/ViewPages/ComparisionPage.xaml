@@ -6,7 +6,7 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              xmlns:local="clr-namespace:DTD.Evaluate.WPFApp.ViewPages"
-             xmlns:customControls="clr-namespace:DTD.Evaluate.WPFApp.CustomControls"
+             xmlns:cards="clr-namespace:DTD.Evaluate.CustomUserControls.Cards;assembly=DTD.Evaluate.CustomUserControls"
              x:Class="DTD.Evaluate.WPFApp.ViewPages.ComparisionPage"
              mc:Ignorable="d">
     <Grid Background="White" >
@@ -32,7 +32,7 @@
                     <ComboBoxItem Content="Aizen"/>
                 </ComboBox>
 
-                <customControls:EmployeeCard  Height="auto"  Width="auto"/>
+                <cards:EmployeeCard  Height="auto"  Width="auto"/>
               
 
 
@@ -76,7 +76,7 @@
                 </ComboBox>
 
                 
-                <customControls:EmployeeCard  Height="auto"  Width="auto"/>
+                <cards:EmployeeCard  Height="auto"  Width="auto"/>
              
 
 

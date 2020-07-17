@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTD.Evaluate.WPFApp", "DTD.Evaluate.WPFApp\DTD.Evaluate.WPFApp.csproj", "{60860400-7BED-4874-AC74-ED040FBD627E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTD.Evaluate.WPFApp", "DTD.Evaluate.WPFApp\DTD.Evaluate.WPFApp.csproj", "{60860400-7BED-4874-AC74-ED040FBD627E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTD.Evaluate.APIManager", "DTD.Evaluate.APIManager\DTD.Evaluate.APIManager.csproj", "{291DC79F-D68A-481D-93B1-9C7251954E11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTD.Evaluate.Models", "DTD.Evaluate.Models\DTD.Evaluate.Models.csproj", "{58AFAF0A-0455-4C08-A971-475F4AB6A2AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTD.Evaluate.CustomUserControls", "DTD.Evaluate.CustomUserControls\DTD.Evaluate.CustomUserControls.csproj", "{771ACBBF-3471-4AFA-9DD7-EDC769F235A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTD.Evaluate.Extentions", "DTD.Evaluate.Extentions\DTD.Evaluate.Extentions.csproj", "{E752C24E-F3DA-41C1-904B-1E89D28DF517}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{60860400-7BED-4874-AC74-ED040FBD627E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60860400-7BED-4874-AC74-ED040FBD627E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60860400-7BED-4874-AC74-ED040FBD627E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291DC79F-D68A-481D-93B1-9C7251954E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291DC79F-D68A-481D-93B1-9C7251954E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291DC79F-D68A-481D-93B1-9C7251954E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291DC79F-D68A-481D-93B1-9C7251954E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58AFAF0A-0455-4C08-A971-475F4AB6A2AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58AFAF0A-0455-4C08-A971-475F4AB6A2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58AFAF0A-0455-4C08-A971-475F4AB6A2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58AFAF0A-0455-4C08-A971-475F4AB6A2AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{771ACBBF-3471-4AFA-9DD7-EDC769F235A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{771ACBBF-3471-4AFA-9DD7-EDC769F235A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{771ACBBF-3471-4AFA-9DD7-EDC769F235A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{771ACBBF-3471-4AFA-9DD7-EDC769F235A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E752C24E-F3DA-41C1-904B-1E89D28DF517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E752C24E-F3DA-41C1-904B-1E89D28DF517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E752C24E-F3DA-41C1-904B-1E89D28DF517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E752C24E-F3DA-41C1-904B-1E89D28DF517}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

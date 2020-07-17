@@ -1,7 +1,6 @@
 ﻿
 using System.Windows;
-
-using DTD.Evaluate.WPFApp.Views;
+using DTD.Evaluate.CustomUserControls.Dialogues;
 
 namespace DTD.Evaluate.WPFApp.ViewPages
 {

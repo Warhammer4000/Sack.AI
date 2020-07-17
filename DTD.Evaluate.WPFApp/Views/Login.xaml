@@ -3,15 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DTD.Evaluate.WPFApp"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:system="clr-namespace:System;assembly=System.Runtime"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="{DynamicResource MaterialDesignPaper}"
         TextElement.FontWeight="Medium"
         TextElement.FontSize="14"
         FontFamily="{materialDesign:MaterialDesignFont}" BorderThickness="2" Height="450" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" BorderBrush="Black">
-
+<materialDesign:DialogHost>
     <Grid>
         <Rectangle RadiusY="8" RadiusX="8" Fill="White"/>
         <Rectangle Margin="310,0,0,0">
@@ -35,16 +35,17 @@
 
 
 
-            <TextBox Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" materialDesign:HintAssist.Hint="Company Domain"
-                     Width="250" Height="50" Margin="10"/>
+            <TextBox x:Name="DomainBox" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" materialDesign:HintAssist.Hint="Company Domain"
+                     Width="250" Height="50" Margin="10" 
+                    />
 
-            <TextBox Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" materialDesign:HintAssist.Hint="Email"
-                     Width="250" Height="50"  Margin="10"/>
+            <TextBox x:Name="EmailBox" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" materialDesign:HintAssist.Hint="Email"
+                     Width="250" Height="50"  Margin="10"  />
 
 
-            <PasswordBox Style="{StaticResource MaterialDesignOutlinedPasswordFieldPasswordBox}"
+            <PasswordBox x:Name="PasswordBox" Style="{StaticResource MaterialDesignOutlinedPasswordFieldPasswordBox}"
                          materialDesign:HintAssist.Hint="Password" Width="250" Margin="10" />
-            <CheckBox Content="Remember Me" Margin="15" Foreground="#707070" />
+            <CheckBox x:Name="RememberMeToggle" Content="Remember Me" Margin="15" Foreground="#707070" IsChecked="True" />
             
 
             <Button x:Name="LoginButton" Margin="10" Content="Login" FontFamily="Impact" FontSize="18" Width="100" Background="#FF307CD6" BorderBrush="#FF307CD6" Click="LoginButton_Click"/>
@@ -59,5 +60,5 @@
             <TextBlock Text="Compare your employees and sack those who you don't need. Your trusted AI that helps you sack people." Foreground="White" HorizontalAlignment="Center" Width="280" FontSize="24" FontFamily="Champagne &amp; Limousines" TextWrapping="Wrap" TextAlignment="Center" Margin="0,50,0,0"/>
         </StackPanel>
     </Grid>
-
+</materialDesign:DialogHost>
 </Window>

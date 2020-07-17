@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
-namespace DTD.Evaluate.WPFApp.Views
+namespace DTD.Evaluate.CustomUserControls.Dialogues
 {
     /// <summary>
     /// Interaction logic for DialogueBox.xaml

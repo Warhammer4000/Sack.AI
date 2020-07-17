@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="DTD.Evaluate.CustomUserControls.Cards.TagCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             mc:Ignorable="d" Background="White"
+             >
+    <materialDesign:DialogHost
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center" Background="Black"
+        DialogClosing="DialogHost_OnDialogClosing">
+
+        <materialDesign:DialogHost.DialogContent>
+            <StackPanel
+                Margin="16" Background="White">
+                <TextBlock>
+                    Add A new Criteria
+                </TextBlock>
+                <TextBox
+                    Margin="0 8 0 0"
+                    HorizontalAlignment="Stretch"
+                    x:Name="CriteriaBox" />
+                <StackPanel
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+                    <Button
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        IsDefault="True"
+                        Margin="0 8 8 0"
+                        Command="materialDesign:DialogHost.CloseDialogCommand">
+                        <Button.CommandParameter>
+                            <system:Boolean >
+                                True
+                            </system:Boolean>
+                        </Button.CommandParameter>
+                        ACCEPT
+                    </Button>
+                    <Button
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        IsCancel="True"
+                        Margin="0 8 8 0"
+                        Command="materialDesign:DialogHost.CloseDialogCommand">
+                        <Button.CommandParameter>
+                            <system:Boolean>
+                                False
+                            </system:Boolean>
+                        </Button.CommandParameter>
+                        CANCEL
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </materialDesign:DialogHost.DialogContent>
+        <Border
+            BorderThickness="1"
+            BorderBrush="{DynamicResource PrimaryHueMidBrush}"
+            MinWidth="200"
+            MinHeight="200"
+            ClipToBounds="True">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition
+                        Height="*" />
+                    <RowDefinition
+                        Height="Auto" />
+                </Grid.RowDefinitions>
+                <WrapPanel
+                    x:Name="ItemsListBox" Width="auto" Height="auto" MaxWidth="400">
+
+                </WrapPanel>
+                <materialDesign:ColorZone
+                    Mode="PrimaryMid"
+                    Grid.Row="1"
+                    Effect="{DynamicResource MaterialDesignShadowDepth5}">
+                    <TextBlock x:Name="CategoryLabel"
+                        Margin="16">
+                        Category Name
+                    </TextBlock>
+                </materialDesign:ColorZone>
+                <Button
+                    Style="{DynamicResource MaterialDesignFloatingActionMiniAccentButton}"
+                    Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"
+                    VerticalAlignment="Bottom"
+                    HorizontalAlignment="Right"
+                    Grid.Row="0"
+                    Margin="0 0 10 -20">
+                    <materialDesign:PackIcon
+                        Kind="Plus"
+                        Height="22"
+                        Width="22" />
+                </Button>
+            </Grid>
+        </Border>
+    </materialDesign:DialogHost>
+</UserControl>

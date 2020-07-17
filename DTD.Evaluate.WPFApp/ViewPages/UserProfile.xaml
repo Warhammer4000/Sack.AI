@@ -14,12 +14,12 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Width="200" Orientation="Vertical" Margin="10,10,10,10">
-            <Image Source="../CustomControls/default.jpeg" />
-            <Button
+            <Image x:Name="ProfileImage"/>
+            <Button x:Name="ChangePictureButton"
                 Style="{StaticResource MaterialDesignRaisedButton}"
-                ToolTip="Resource name: MaterialDesignRaisedButton">
+                ToolTip="Resource name: MaterialDesignRaisedButton" Click="ChangePictureButton_Click">
                 Change Picture
-            </Button>
+            </Button >
             <StackPanel >
 
             </StackPanel>

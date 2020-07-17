@@ -2,7 +2,7 @@
 using System.Windows.Input;
 using MaterialDesignThemes.Wpf;
 
-namespace DTD.Evaluate.WPFApp.CustomControls
+namespace DTD.Evaluate.CustomUserControls.Cards
 {
     /// <summary>
     /// Interaction logic for EmployeeCard.xaml

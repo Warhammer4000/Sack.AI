@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\default.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="1.2.6" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\default.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Cards\EmployeeCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Cards\TagCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Cards\TagManagerControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dialogues\DialogueBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Cards\EmployeeCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Cards\TagCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Cards\TagManagerControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dialogues\DialogueBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
