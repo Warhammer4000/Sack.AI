@@ -1,0 +1,123 @@
+﻿<UserControl x:Class="DTD.Evaluate.WPFApp.ViewPages.UserProfile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DTD.Evaluate.WPFApp.ViewPages"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Width="200" Orientation="Vertical" Margin="10,10,10,10">
+            <Image Source="../CustomControls/default.jpeg" />
+            <Button
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                ToolTip="Resource name: MaterialDesignRaisedButton">
+                Change Picture
+            </Button>
+            <StackPanel >
+
+            </StackPanel>
+        </StackPanel>
+
+        <WrapPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+            <GroupBox
+                Header="Details"
+                Style="{DynamicResource MaterialDesignCardGroupBox}"
+                Margin="16,16,16,163">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel
+                            Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Kind="Details"
+                                Height="32"
+                                Width="32"
+                                VerticalAlignment="Center" />
+                            <TextBlock
+                                Margin="8,0,0,0"
+                                VerticalAlignment="Center"
+                                Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                                Text="{Binding}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+                <StackPanel HorizontalAlignment="Left">
+                    <StackPanel Margin="0,10" Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="AccountBox" VerticalAlignment="Center" Foreground="#707070"/>
+                        <TextBox materialDesign:HintAssist.Hint="Name" Width="250" Margin="5" Text=""/>
+                    </StackPanel>
+                    <StackPanel Margin="0,10" Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Email" VerticalAlignment="Center" Foreground="#707070"/>
+                        <TextBox materialDesign:HintAssist.Hint="Email" Width="250" Margin="5"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,10" Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Phone" VerticalAlignment="Center" Foreground="#707070"/>
+                        <TextBox materialDesign:HintAssist.Hint="Phone" Width="250" Margin="5"/>
+                    </StackPanel>
+
+                    <Button
+                        Style="{StaticResource MaterialDesignRaisedButton}"
+                        ToolTip="Resource name: MaterialDesignRaisedButton" HorizontalAlignment="Right" Height="32">
+                        Update
+                    </Button>
+                </StackPanel>
+            </GroupBox>
+
+
+            <GroupBox
+                Header="Change Password"
+                Style="{DynamicResource MaterialDesignCardGroupBox}"
+                Margin="16,16,16,149" Grid.Column="1">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel
+                            Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Kind="ForgotPassword"
+                                Height="32"
+                                Width="32"
+                                VerticalAlignment="Center" />
+                            <TextBlock
+                                Margin="8,0,0,0"
+                                VerticalAlignment="Center"
+                                Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                                Text="{Binding}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+                <StackPanel HorizontalAlignment="Left">
+
+                    <StackPanel Margin="0,10" Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Key" VerticalAlignment="Center" Foreground="#707070"/>
+                        <PasswordBox  materialDesign:HintAssist.Hint="Old Password" Width="250" Margin="5" />
+                    </StackPanel>
+                    <StackPanel Margin="0,10" Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Key" VerticalAlignment="Center" Foreground="#707070"/>
+                        <PasswordBox  materialDesign:HintAssist.Hint="New Password" Width="250" Margin="5" />
+                    </StackPanel>
+                    <StackPanel Margin="0,10" Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Key" VerticalAlignment="Center" Foreground="#707070"/>
+                        <PasswordBox materialDesign:HintAssist.Hint="Confirm Password" Width="250" Margin="5"/>
+                    </StackPanel>
+                    <Button
+                        Style="{StaticResource MaterialDesignRaisedButton}"
+                        ToolTip="Resource name: MaterialDesignRaisedButton" HorizontalAlignment="Right" Height="32">
+                        Update
+                    </Button>
+                </StackPanel>
+            </GroupBox>
+
+
+
+
+        </WrapPanel>
+
+    </Grid>
+</UserControl>
