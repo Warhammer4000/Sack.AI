@@ -1,24 +1,31 @@
 ﻿<UserControl x:Class="DTD.Evaluate.CustomUserControls.Cards.EmployeeCard"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" Background="White" Width="172">
-    <materialDesign:Card x:Name="BaseCard" Height="auto" Margin="0,10" materialDesign:ShadowAssist.ShadowDepth="Depth2" MouseEnter="BaseCard_MouseEnter" MouseLeave="BaseCard_MouseLeave">
-    <StackPanel>
-            <TextBlock Margin="10" Style="{DynamicResource MaterialDesignSubtitle1TextBlock}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontWeight="Bold"> Employee Name</TextBlock>
-        <Image Height="173" Width="153"
-               Source="../Resources/default.jpeg"
-               Stretch="Uniform" />
-        <WrapPanel Orientation="Horizontal">
-            <materialDesign:Chip Content="C#" Background="Black" Foreground="White" Margin="5,5" />
-            <materialDesign:Chip Content="Unity" Background="Black" Foreground="White" Margin="5,5" />
-            <materialDesign:Chip Content=".Net" Background="Black" Foreground="White" Margin="5,5" />
-            <materialDesign:Chip Content="Visual Studio" Background="Black" Foreground="White"
-                                 Margin="5,5" />
+    <materialDesign:Card x:Name="BaseCard" Height="auto" Margin="0,10" materialDesign:ShadowAssist.ShadowDepth="Depth2"
+                         MouseEnter="BaseCard_MouseEnter" MouseLeave="BaseCard_MouseLeave">
+        <StackPanel>
+            <TextBlock Margin="10" Style="{DynamicResource MaterialDesignSubtitle1TextBlock}"
+                       HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontWeight="Bold">
+                Employee Name
+            </TextBlock>
+            <Image Height="173" Width="153"
+                   Source="../Resources/default.jpeg"
+                   Stretch="Uniform" />
+            <WrapPanel Orientation="Horizontal">
+                <materialDesign:Chip Content="C#" Background="Black" Foreground="White" Margin="5,5" />
+                <materialDesign:Chip Content="Unity" Background="Black" Foreground="White" Margin="5,5" />
+                <materialDesign:Chip Content=".Net" Background="Black" Foreground="White" Margin="5,5" />
+                <materialDesign:Chip Content="Visual Studio" Background="Black" Foreground="White"
+                                     Margin="5,5" />
 
-        </WrapPanel>
-    </StackPanel>
-        </materialDesign:Card>
+            </WrapPanel>
+            <Button x:Name="CardButton" Style="{DynamicResource MaterialDesignFlatDarkBgButton}" Margin="5,10,5,10" Content="Do Something" x:FieldModifier="public">
+                
+            </Button>
+        </StackPanel>
+    </materialDesign:Card>
 </UserControl>

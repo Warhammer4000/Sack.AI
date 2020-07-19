@@ -7,6 +7,7 @@
              xmlns:wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              xmlns:local="clr-namespace:DTD.Evaluate.WPFApp.ViewPages"
              xmlns:cards="clr-namespace:DTD.Evaluate.CustomUserControls.Cards;assembly=DTD.Evaluate.CustomUserControls"
+             xmlns:controls="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
              x:Class="DTD.Evaluate.WPFApp.ViewPages.ComparisionPage"
              mc:Ignorable="d">
     <Grid Background="White" >
@@ -22,15 +23,10 @@
             <StackPanel>
                 <TextBlock Style="{StaticResource MaterialDesignHeadline6TextBlock}" Text="Employee 1"
                            HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" />
-                <ComboBox
-                    materialDesign:HintAssist.Hint="Search"
-                    Style="{StaticResource MaterialDesignFloatingHintComboBox}"
-                    IsEditable="True">
-                    <ComboBoxItem Content="Abel"/>
-                    <ComboBoxItem Content="Anna"/>
-                    <ComboBoxItem Content="Afro"/>
-                    <ComboBoxItem Content="Aizen"/>
-                </ComboBox>
+                <controls:PersistentSearch Margin="5,5,5,5" FontSize="14">
+                    
+                    
+                </controls:PersistentSearch>
 
                 <cards:EmployeeCard  Height="auto"  Width="auto"/>
               
@@ -65,17 +61,12 @@
             <StackPanel>
                 <TextBlock Style="{StaticResource MaterialDesignHeadline6TextBlock}" Text="Employee 2"
                            HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" />
-                <ComboBox
-                    materialDesign:HintAssist.Hint="Search"
-                    Style="{StaticResource MaterialDesignFloatingHintComboBox}"
-                    IsEditable="True">
-                    <ComboBoxItem Content="Abel"/>
-                    <ComboBoxItem Content="Anna"/>
-                    <ComboBoxItem Content="Afro"/>
-                    <ComboBoxItem Content="Aizen"/>
-                </ComboBox>
+                <controls:PersistentSearch Margin="5,5,5,5" FontSize="14">
 
-                
+
+                </controls:PersistentSearch>
+
+
                 <cards:EmployeeCard  Height="auto"  Width="auto"/>
              
 
