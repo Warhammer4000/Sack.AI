@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DTD.Evaluate.Models\DTD.Evaluate.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Resources\default.jpeg" />
   </ItemGroup>
 

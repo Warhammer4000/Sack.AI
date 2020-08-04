@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:controls="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
-             mc:Ignorable="d"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None" Height="485" MinWidth="800" HorizontalAlignment="Center" VerticalAlignment="Center" >
+             mc:Ignorable="d"  WindowStartupLocation="CenterScreen" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStyle="ToolWindow" MinHeight="750" MinWidth="650" Width="650">
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -17,7 +17,7 @@
         </Grid.ColumnDefinitions>
         <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth2"
                              Padding="10" Margin="10,10,10,10">
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
             <Label Content="New Employee"  FontSize="24" Margin="0,10" VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="Bold"/>
             <StackPanel Orientation="Horizontal"/>
             <StackPanel Margin="0,10" Orientation="Horizontal">
@@ -50,7 +50,7 @@
         <materialDesign:Card Grid.Row="0" Grid.Column="1" materialDesign:ShadowAssist.ShadowDepth="Depth2"  Padding="10" Margin="10,10,10,10">
             <StackPanel>
                 <Label Content="Tags"  FontSize="24" Margin="20,20" VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="Bold"/>
-                <controls:PersistentSearch>
+                <controls:PersistentSearch Margin="5,5,5,5">
 
                 </controls:PersistentSearch>
                 <WrapPanel Margin="5,5,5,5">
@@ -61,7 +61,6 @@
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2"
                     Grid.Column="0">
-            <Button Margin="10,10" x:Name="CancelButton" Content="Cancle" FontFamily="Impact" FontSize="18" Width="100" Background="IndianRed" BorderBrush="#FF307CD6" Click="CancleButton_Click" />
             <Button Margin="10,10" x:Name="CreateButton" Content="Create" FontFamily="Impact" FontSize="18" Width="100" Background="LightSeaGreen" BorderBrush="#FF307CD6" Click="CreateButton_Click" />
         </StackPanel>
 

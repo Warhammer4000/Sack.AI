@@ -22,6 +22,7 @@
     <ProjectReference Include="..\DTD.Evaluate.APIManager\DTD.Evaluate.APIManager.csproj" />
     <ProjectReference Include="..\DTD.Evaluate.CustomUserControls\DTD.Evaluate.CustomUserControls.csproj" />
     <ProjectReference Include="..\DTD.Evaluate.Extentions\DTD.Evaluate.Extentions.csproj" />
+    <ProjectReference Include="..\DTD.Evaluate.Factory\DTD.Evaluate.Factory.csproj" />
     <ProjectReference Include="..\DTD.Evaluate.Models\DTD.Evaluate.Models.csproj" />
   </ItemGroup>
 

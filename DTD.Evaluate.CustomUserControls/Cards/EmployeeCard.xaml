@@ -7,25 +7,25 @@
              mc:Ignorable="d" Background="White" Width="172">
     <materialDesign:Card x:Name="BaseCard" Height="auto" Margin="0,10" materialDesign:ShadowAssist.ShadowDepth="Depth2"
                          MouseEnter="BaseCard_MouseEnter" MouseLeave="BaseCard_MouseLeave">
-        <StackPanel>
-            <TextBlock Margin="10" Style="{DynamicResource MaterialDesignSubtitle1TextBlock}"
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="Namelable" Margin="10" Style="{DynamicResource MaterialDesignSubtitle1TextBlock}"
                        HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontWeight="Bold">
                 Employee Name
             </TextBlock>
             <Image Height="173" Width="153"
                    Source="../Resources/default.jpeg"
-                   Stretch="Uniform" />
-            <WrapPanel Orientation="Horizontal">
-                <materialDesign:Chip Content="C#" Background="Black" Foreground="White" Margin="5,5" />
-                <materialDesign:Chip Content="Unity" Background="Black" Foreground="White" Margin="5,5" />
-                <materialDesign:Chip Content=".Net" Background="Black" Foreground="White" Margin="5,5" />
-                <materialDesign:Chip Content="Visual Studio" Background="Black" Foreground="White"
-                                     Margin="5,5" />
-
+                   Stretch="Uniform" Grid.Row="1" />
+            <WrapPanel x:Name="ChipsPanel" Orientation="Horizontal" Grid.Row="2">
             </WrapPanel>
-            <Button x:Name="CardButton" Style="{DynamicResource MaterialDesignFlatDarkBgButton}" Margin="5,10,5,10" Content="Do Something" x:FieldModifier="public">
+            <Button x:Name="CardButton" Style="{DynamicResource MaterialDesignFlatDarkBgButton}" Margin="5,10,5,10" Content="Do Something" x:FieldModifier="public" VerticalAlignment="Bottom" Grid.Row="3">
                 
             </Button>
-        </StackPanel>
+        </Grid>
     </materialDesign:Card>
 </UserControl>
